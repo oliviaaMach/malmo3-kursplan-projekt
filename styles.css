@@ -10,7 +10,8 @@ body {
   background-color: var(--bg-color);
 }
 
-/* Gör så footern alltid ligger längst ner på sidan */
+/* Oligerta kod börjar här */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -19,22 +20,34 @@ html, body {
 }
 
 main {
-  flex: 1; /* Huvudinnehåll tar upp utrymmet mellan header och footer */
-}
-
-
-
-
-/* Vänster (copyright) */
-.footer-left {
-  position: absolute;
-  left: 2rem; /* Flyttar copyright till vänster */
-}
-
-/* Mitten (länk) */
-.footer-center {
-  text-align: center;
   flex: 1; 
-
-
 }
+
+footer {
+  background-color: var(--primary);
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between; 
+  padding: 1rem 2rem;
+}
+
+/* Vänster text */
+.footer-left {
+  text-align: left;
+}
+
+/* Mittenlänken */
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+/* Oligerta kod slutar här */
