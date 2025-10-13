@@ -37,18 +37,12 @@ Planning Stages
 ### Color Scheme
 
 <p>
-  <span style="display:inline-block;width:60px;height:30px;background:#EEEEEE;border:1px solid #ccc;margin-right:4px;"></span>
-  <span style="display:inline-block;width:60px;height:30px;background:#DDDDDD;border:1px solid #ccc;margin-right:4px;"></span>
-  <span style="display:inline-block;width:60px;height:30px;background:#FFFFFF;border:1px solid #ccc;margin-right:4px;"></span>
-  <span style="display:inline-block;width:60px;height:30px;background:#C7B8A6;border:1px solid #ccc;"></span>
+  <img src="https://via.placeholder.com/60x30/EEEEEE/000000?text=+" alt="#EEEEEE" />
+  <img src="https://via.placeholder.com/60x30/DDDDDD/000000?text=+" alt="#DDDDDD" />
+  <img src="https://via.placeholder.com/60x30/FFFFFF/000000?text=+" alt="#FFFFFF" />
+  <img src="https://via.placeholder.com/60x30/C7B8A6/000000?text=+" alt="#C7B8A6" />
 </p>
 
-| Color | Hex |
-|-------|-----|
-| <span style="display:inline-block;width:20px;height:20px;background:#EEEEEE;border:1px solid #ccc;"></span> | `#EEEEEE` |
-| <span style="display:inline-block;width:20px;height:20px;background:#DDDDDD;border:1px solid #ccc;"></span> | `#DDDDDD` |
-| <span style="display:inline-block;width:20px;height:20px;background:#FFFFFF;border:1px solid #ccc;"></span> | `#FFFFFF` |
-| <span style="display:inline-block;width:20px;height:20px;background:#C7B8A6;border:1px solid #ccc;"></span> | `#C7B8A6` |
 ### Technologies
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="20" height="20"  /> 
