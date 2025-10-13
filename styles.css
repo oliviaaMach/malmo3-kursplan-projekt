@@ -1,4 +1,8 @@
-/* :ROOT */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --bg-color: #eeeeee;
   --primary: #dddddd;
@@ -9,3 +13,48 @@
 body {
   background-color: var(--bg-color);
 }
+
+/* Dennis kod börjar här */
+
+.hero-gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+  color: #fff;
+  background: linear-gradient(135deg, #3A0CA3, #7209B7, #4361EE, #4CC9F0);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+  padding: 10%;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  display: grid;
+}
+
+.cta h1 {
+  font-size: clamp(2rem, 10vw, 8rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.cta {
+
+}
+
+.summery{
+  
+}
+
+/* Dennis kod slutar här */
