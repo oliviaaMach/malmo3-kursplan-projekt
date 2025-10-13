@@ -9,3 +9,85 @@
 body {
   background-color: var(--bg-color);
 }
+
+/* Mohammad -KOD BÖRJAR HÄR! */
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #FFFFFF;
+}
+
+/* GRID WRAPPER */
+.main-wrapper {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* BOX DESIGN */
+.info-box {
+  background-color: #EEEEEE;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.info-box h2 {
+  color: #C7B8A6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info-box h3 {
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.info-box ol,
+.info-box ul {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.info-box li {
+  margin-bottom: 0.5rem;
+}
+
+/* 📱 MOBIL (1 kolumn) */
+@media (max-width: 768px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 💻 DESKTOP (2 top + 1 center) */
+@media (min-width: 769px) {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "box1 box2"
+      "box3 .";
+    gap: 2rem;
+  }
+
+  .info-box:nth-child(1) {
+    grid-area: box1;
+  }
+
+  .info-box:nth-child(2) {
+    grid-area: box2;
+  }
+  
+  .info-box:nth-child(3) {
+    grid-area: box3;
+  }
+}
+
+
+/* Mohammad -KOD SLUTAR HÄR! */
