@@ -9,3 +9,35 @@
 body {
   background-color: var(--bg-color);
 }
+
+
+
+/* OLIVIA START */
+
+.contact-edu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.contact-edu h3 {
+  margin: 0;
+}
+
+.contact-edu p, a {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.edu {
+  padding: 50px 0;
+}
+
+.edu img {
+  width: 200px;
+  margin: 0;
+}
+
+
+/* OLIVIA END */
