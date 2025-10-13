@@ -2,10 +2,10 @@
 This project aims to transform the course plan into an engaging and visually interesting experience that’s easier and more enjoyable to explore.
 
 ### Team Members
-*Scrum Master* - Axel
-*Project Owner* - Olivia
-*Designer* - Dennis
-*Developers* - Axel, Dennis, Mohammad, Olivia, Oligerta, Sarvin
+- *Scrum Master* - Axel
+- *Project Owner* - Olivia
+- *Designer* - Dennis
+- *Developers* - Axel, Dennis, Mohammad, Olivia, Oligerta, Sarvin
 
 ### Milestones
 
@@ -36,7 +36,7 @@ Planning Stages
 
 ### Color Scheme
 
-<img src="assets/images/swatch.png" height="500px" width="auto" alt="color swatch">
+<img src="assets/images/swatch.png" height="300px" width="auto" alt="color swatch">
 
 ### Technologies
 <p>
