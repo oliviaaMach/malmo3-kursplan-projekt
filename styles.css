@@ -1,1 +1,11 @@
+/* :ROOT */
+:root {
+  --bg-color: #eeeeee;
+  --primary: #dddddd;
+  --secondary: #ffffff;
+  --accent: #C7B8A6;
+}
 
+body {
+  background-color: var(--bg-color);
+}
