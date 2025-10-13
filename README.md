@@ -37,11 +37,19 @@ Planning Stages
 ### Color Scheme
 
 <p>
-  <img src="https://via.placeholder.com/60x30/EEEEEE/000000?text=+" alt="#EEEEEE" />
-  <img src="https://via.placeholder.com/60x30/DDDDDD/000000?text=+" alt="#DDDDDD" />
-  <img src="https://via.placeholder.com/60x30/FFFFFF/000000?text=+" alt="#FFFFFF" />
-  <img src="https://via.placeholder.com/60x30/C7B8A6/000000?text=+" alt="#C7B8A6" />
+  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#EEEEEE" stroke="#ccc"/></svg>
+  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#DDDDDD" stroke="#ccc"/></svg>
+  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#FFFFFF" stroke="#ccc"/></svg>
+  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#C7B8A6" stroke="#ccc"/></svg>
 </p>
+
+| Color | Hex |
+|---|---|
+| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#EEEEEE" stroke="#ccc"/></svg> | `#EEEEEE` |
+| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#DDDDDD" stroke="#ccc"/></svg> | `#DDDDDD` |
+| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#FFFFFF" stroke="#ccc"/></svg> | `#FFFFFF` |
+| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#C7B8A6" stroke="#ccc"/></svg> | `#C7B8A6` |
+
 
 ### Technologies
 <p>
