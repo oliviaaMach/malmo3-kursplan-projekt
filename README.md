@@ -36,20 +36,7 @@ Planning Stages
 
 ### Color Scheme
 
-<p>
-  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#EEEEEE" stroke="#ccc"/></svg>
-  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#DDDDDD" stroke="#ccc"/></svg>
-  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#FFFFFF" stroke="#ccc"/></svg>
-  <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="30" fill="#C7B8A6" stroke="#ccc"/></svg>
-</p>
-
-| Color | Hex |
-|---|---|
-| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#EEEEEE" stroke="#ccc"/></svg> | `#EEEEEE` |
-| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#DDDDDD" stroke="#ccc"/></svg> | `#DDDDDD` |
-| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#FFFFFF" stroke="#ccc"/></svg> | `#FFFFFF` |
-| <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#C7B8A6" stroke="#ccc"/></svg> | `#C7B8A6` |
-
+<img src="assets/images/swatch.png" heigh="30px" alt="color swatch">
 
 ### Technologies
 <p>
