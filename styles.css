@@ -14,7 +14,7 @@ body {
   background-color: var(--bg-color);
 }
 
-/* Dennis kod börjar här */
+/* Dennis kod starts here */
 
 .hero-gradient {
   display: flex;
@@ -22,11 +22,11 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  min-height: 50vh;
+  min-height: 60vh;
   color: #fff;
   background: linear-gradient(135deg, #3A0CA3, #7209B7, #4361EE, #4CC9F0);
   background-size: 300% 300%;
-  animation: gradientShift 10s ease infinite;
+  animation: gradientShift 7s ease infinite;
   padding: 10%;
 }
 
@@ -37,24 +37,62 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  z-index: 1;
-  max-width: 800px;
-  display: grid;
-}
-
-.cta h1 {
-  font-size: clamp(2rem, 10vw, 8rem);
-  line-height: 1.1;
-  margin: 0;
-}
-
-.cta {
-
-}
-
-.summery{
+  width: 100%;
+  align-items: center;
   
 }
 
-/* Dennis kod slutar här */
+.cta {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.cta h1 {
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-weight: 700;
+  margin: 0;
+  transform: rotate(-8deg);
+  transform-origin: left bottom;
+  line-height: 1;
+  text-shadow: 6px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.summery {
+  position: absolute;
+  top: 70%;              
+  right: 20%;            
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  .cta h1 {
+    transform: none;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+
+  .summery {
+    position: static;
+    margin-top: 1.5rem;
+    /* max-width: 90%; */
+    text-align: left;
+  }
+
+  .hero-gradient {
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+}
+
+
+/* Dennis kod stops here */
