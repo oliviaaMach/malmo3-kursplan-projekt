@@ -94,4 +94,29 @@
 .hamburger.open span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-links {
+    position: static;
+    max-height: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    height: auto;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a {
+    font-weight: bold;
+  }
+}
   /* Axels kod slutar här */
