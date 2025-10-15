@@ -53,11 +53,6 @@ body {
   animation: ripple 5s ease-in infinite;
 }
 
-/* second ring starts later for continuous ripples */
-/* .hero-gradient::after {
-  animation-delay: 2.5s;  
-} */
-
 @keyframes ripple {
   0%   { transform: scale(0);   opacity: .6; }
   70%  { opacity: .15; }
@@ -109,11 +104,9 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .cta h1 {
-    transform: none;
-    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
-    text-align: left;
+    transform: rotate(-5deg);
   }
 
   .summery {
@@ -133,6 +126,12 @@ body {
 .hero-gradient::after {
   inset: -10% -50%
 }
+}
+
+@media (max-width: 426px) {
+  .cta h1 {
+    transform: rotate(-5deg);
+  }
 }
 
 
