@@ -24,17 +24,46 @@ body {
   overflow: hidden;
   min-height: 60vh;
   color: #fff;
-  background: linear-gradient(135deg, #3A0CA3, #7209B7, #4361EE, #4CC9F0);
-  background-size: 300% 300%;
-  animation: gradientShift 7s ease infinite;
+
+  background: #01023f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120% 120%;
+
+  animation: pulseGradient 5s ease-in-out infinite;
   padding: 10%;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.hero-gradient::before,
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  inset: -50% -10%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+
+  /* a soft ring: transparent center, bright edge, fade outwards */
+  background: radial-gradient(circle,
+    rgba(255,255,255,0) 0 46%,
+    rgba(255,255,255,.35) 48%,
+    rgba(255,255,255,0) 55%);
+  transform: scale(0);
+  opacity: .6;
+  animation: ripple 5s ease-in infinite;
 }
+
+/* second ring starts later for continuous ripples */
+/* .hero-gradient::after {
+  animation-delay: 2.5s;  
+} */
+
+@keyframes ripple {
+  0%   { transform: scale(0);   opacity: .6; }
+  70%  { opacity: .15; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
 
 .wrapper {
   display: flex;
@@ -54,10 +83,10 @@ body {
   font-size: clamp(2.5rem, 8vw, 8rem);
   font-weight: 700;
   margin: 0;
-  transform: rotate(-8deg);
+  transform: rotate(-10deg);
   transform-origin: left bottom;
   line-height: 1;
-  text-shadow: 6px 8px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 6px 8px 0 rgba(162, 245, 251, 0.189);
   position: relative;
   z-index: 2;
   transition: all 0.3s ease;
@@ -72,9 +101,15 @@ body {
   line-height: 1.6;
   text-align: left;
   color: #ccc;
+  padding: 10px;
+  border: 3px dashed #fff;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .cta h1 {
     transform: none;
     text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -84,7 +119,6 @@ body {
   .summery {
     position: static;
     margin-top: 1.5rem;
-    /* max-width: 90%; */
     text-align: left;
   }
 
@@ -92,6 +126,13 @@ body {
     justify-content: center;
     padding: 3rem 1.5rem;
   }
+}
+
+@media (max-width: 426px) {
+    .hero-gradient::before,
+.hero-gradient::after {
+  inset: -10% -50%
+}
 }
 
 
