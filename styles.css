@@ -8,9 +8,17 @@
 
 body {
   background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Mohammad -KOD BÖRJAR HÄR! */
+/* ensure padding/border don't create unexpected overflow */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Mohammad - KOD BÖRJAR HÄR! */
 
 .main-section {
   display: flex;
@@ -20,74 +28,103 @@ body {
   background-color: #FFFFFF;
 }
 
-/* GRID WRAPPER */
+
 .main-wrapper {
   display: grid;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
+  margin: 0 auto;
+  
+  
+  /* use a smaller, responsive min so columns don't force horizontal scroll on phones */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
 }
 
 /* BOX DESIGN */
 .info-box {
   background-color: #EEEEEE;
-  border: 1px solid #DDDDDD;
-  border-radius: 12px;
-  padding: 2rem;
+  
+  border-radius: 20px;
+  padding: 3rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  min-height: 400px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #C7B8A6;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .info-box h2 {
   color: #C7B8A6;
   text-align: center;
   margin-bottom: 1rem;
+  
 }
 
 .info-box h3 {
   margin-top: 1.5rem;
-  color: #333;
+   background-color: #fff7e6;
 }
 
 .info-box ol,
 .info-box ul {
   padding-left: 1.2rem;
   line-height: 1.6;
+  
 }
 
 .info-box li {
   margin-bottom: 0.5rem;
 }
 
-/* 📱 MOBIL (1 kolumn) */
+/* 📱 MOBIL (lite mindre padding) */
+@media (max-width: 768px) {
+  .info-box {
+    padding: 2rem;
+  }
+}
+
+.info-box:last-child {
+  background-color: #fff7e6; 
+  border: 2px solid #C7B8A6;
+  min-height: 400px; 
+  padding: 2rem; 
+  width: 100%;
+  min-width: 0;
+}
+
+
 @media (max-width: 768px) {
   .main-wrapper {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  
+  .info-box:last-child {
+    padding: 2rem;
+    width: 100%;
+    min-width: 0;
   }
 }
 
-/* 💻 DESKTOP (2 top + 1 center) */
+/* Desktop layout: two columns */
 @media (min-width: 769px) {
   .main-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "box1 box2"
-      "box3 .";
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 
-  .info-box:nth-child(1) {
-    grid-area: box1;
-  }
-
-  .info-box:nth-child(2) {
-    grid-area: box2;
-  }
-  
-  .info-box:nth-child(3) {
-    grid-area: box3;
+  .main-wrapper > .info-box:last-child {
+    grid-column: 1 / -1;
   }
 }
 
 
-/* Mohammad -KOD SLUTAR HÄR! */
+/* Mohammad - KOD SLUTAR HÄR! */
