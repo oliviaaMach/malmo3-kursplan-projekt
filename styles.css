@@ -12,7 +12,7 @@ body {
 
 /* Oligerta kod börjar här */
 
-html, body {
+html, body { 
   height: 100%;
   margin: 0;
   display: flex;
@@ -20,34 +20,29 @@ html, body {
 }
 
 main {
-  flex: 1; 
+  flex: 1; /* tar upp allt utrymme så footern pushas ner */
 }
 
 footer {
   background-color: var(--primary);
   color: var(--accent);
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between; /* vänster till höger */
+  align-items: center;            /* centrera vertikalt */
   padding: 1rem 2rem;
 }
 
-/* Vänster text */
+/* Vänster: copyright */
 .footer-left {
   text-align: left;
 }
 
-/* Mittenlänken */
-.footer-center {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-center a {
+/* Höger: Chas Academy länk */
+.footer-right a {
   color: var(--accent);
   text-decoration: none;
 }
 
-.footer-center a:hover {
+.footer-right a:hover {
   text-decoration: underline;
 }
-/* Oligerta kod slutar här */
