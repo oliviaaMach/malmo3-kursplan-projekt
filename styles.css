@@ -326,6 +326,7 @@ main {
 @media (max-width: 768px) {
   .info-box {
     padding: 2rem;
+    
   }
 }
 
@@ -336,6 +337,7 @@ main {
   padding: 2rem; 
   width: 100%;
   min-width: 0;
+  max-width: fit-content
 }
 
 
