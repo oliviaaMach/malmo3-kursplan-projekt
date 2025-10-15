@@ -120,3 +120,78 @@
   }
 }
   /* Axels kod slutar här */
+
+  /* Axels kod börjar här (FAQ) */
+
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  text-align: center;
+  gap: 5px;
+  background-color: var(--secondary);
+}
+
+.faq h3 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.faq-question {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  background: var(--primary);
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.faq-question:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.faq-answer {
+  width: 90%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: var(--primary);
+  padding: 0 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.faq-item:last-child {
+  margin-bottom: 1rem;
+}
+
+.faq-answer p {
+  margin: 1rem 0;
+}
+
+
+@media (min-width: 768px) {
+  .faq {
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .faq h3 {
+    font-size: 2rem;
+  }
+}
+
+  /* Axels kod slutar här (FAQ) */
