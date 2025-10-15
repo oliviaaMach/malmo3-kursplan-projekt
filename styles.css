@@ -9,3 +9,40 @@
 body {
   background-color: var(--bg-color);
 }
+
+/* Oligerta kod börjar här */
+
+html, body { 
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* tar upp allt utrymme så footern pushas ner */
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between; /* vänster till höger */
+  align-items: center;            /* centrera vertikalt */
+  padding: 1rem 2rem;
+}
+
+/* Vänster: copyright */
+.footer-left {
+  text-align: left;
+}
+
+/* Höger: Chas Academy länk */
+.footer-right a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
