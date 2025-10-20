@@ -7,7 +7,10 @@
 main {
   padding-top: 50px;
 }
-  
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* :ROOT */
   :root {
@@ -440,7 +443,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px auto;
+  margin: 0 auto;
   text-align: center;
   gap: 5px;
   background-color: var(--secondary);
@@ -497,8 +500,16 @@ hr {
 
 @media (min-width: 768px) {
   .faq {
-    width: 60%;
+    /* width: 60%; */
     border-radius: 10px;
+  }
+
+  .faq-question {
+    width: 40%;
+  }
+
+  .faq-answer {
+    width: 40%;
   }
 
   .faq h3 {
