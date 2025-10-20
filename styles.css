@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -13,82 +12,82 @@ html {
 }
 
 /* :ROOT */
-  :root {
-    --bg-color: #eeeeee;
-    --primary: #dddddd;
-    --secondary: #ffffff;
-    --accent: #C7B8A6;
-  }
+:root {
+  --bg-color: #eeeeee;
+  --primary: #dddddd;
+  --secondary: #ffffff;
+  --accent: #c7b8a6;
+}
 
-  body {
-    background-color: var(--bg-color);
-  }
+body {
+  background-color: var(--bg-color);
+}
 
-  /* Axels kod börjar här */
-  /* NAVIGATION */
-  .logo img {
-    width: 32px;
-    height: auto;
-    display: block;
-  }
+/* Axels kod börjar här */
+/* NAVIGATION */
+.logo img {
+  width: 32px;
+  height: auto;
+  display: block;
+}
 
-  .navbar {
-    position: fixed;
-    background-color: var(--primary);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* position: relative; */
-    overflow: visible;
-    z-index: 100;
-    width: 100%;
-  }
+.navbar {
+  position: fixed;
+  background-color: var(--primary);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+  overflow: visible;
+  z-index: 100;
+  width: 100%;
+}
 
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    list-style: none;
-    background-color: var(--primary);
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
-    padding: 0;
-    text-align: center;
-    margin-top: -2px;
-    z-index: 5;
-  }
+.nav-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  background-color: var(--primary);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  padding: 0;
+  text-align: center;
+  margin-top: -2px;
+  z-index: 5;
+}
 
-  .nav-links.active {
-    max-height: 400px;
-    text-align: center;
-    padding: 1rem 0;
-  }
+.nav-links.active {
+  max-height: 400px;
+  text-align: center;
+  padding: 1rem 0;
+}
 
-  .nav-links li {
-    margin: 0.5rem 0;
-    text-decoration: none;
-  }
+.nav-links li {
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
 
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: #000000;
+}
 
-  .hamburger {
-    width: 32px;
-    margin-right: 2rem;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 20;
-    position: relative;
-    overflow: visible;
-  }
+.hamburger {
+  width: 32px;
+  margin-right: 2rem;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+  overflow: visible;
+}
 
 .hamburger span {
   display: block;
@@ -139,16 +138,13 @@ html {
 
 /* Axels kod slutar här */
 
-
 /* OLIVIA START */
 
 .contact-edu {
   background-color: var(--secondary);
   display: grid;
-  width: 80%;
   justify-items: center;
   justify-self: center;
-  padding: 20px;
 }
 
 .contact-edu h3 {
@@ -156,11 +152,11 @@ html {
   font-size: 1.3em;
 }
 
-.contact-edu p, a {
+.contact-edu p,
+a {
   margin-top: 10px;
   margin-bottom: 2px;
   font-size: 1.2em;
-
 }
 
 .edu {
@@ -168,7 +164,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .edu img {
@@ -183,9 +178,7 @@ hr {
   color: #000000;
 }
 
-
 @media (min-width: 800px) {
-
   .contact-edu {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -201,7 +194,7 @@ hr {
 }
 
 /* OLIVIA END */
-  
+
 /* Dennis kod starts here */
 
 .hero-gradient {
@@ -230,21 +223,30 @@ hr {
   z-index: 0;
 
   /* a soft ring: transparent center, bright edge, fade outwards */
-  background: radial-gradient(circle,
-    rgba(255,255,255,0) 0 46%,
-    rgba(255,255,255,.35) 48%,
-    rgba(255,255,255,0) 55%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0 46%,
+    rgba(255, 255, 255, 0.35) 48%,
+    rgba(255, 255, 255, 0) 55%
+  );
   transform: scale(0);
-  opacity: .6;
+  opacity: 0.6;
   animation: ripple 5s ease-in infinite;
 }
 
 @keyframes ripple {
-  0%   { transform: scale(0);   opacity: .6; }
-  70%  { opacity: .15; }
-  100% { transform: scale(2.2); opacity: 0; }
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
 }
-
 
 .wrapper {
   display: flex;
@@ -252,7 +254,6 @@ hr {
   position: relative;
   width: 100%;
   align-items: center;
-  
 }
 
 .cta {
@@ -275,8 +276,8 @@ hr {
 
 .summery {
   position: absolute;
-  top: 70%;              
-  right: 20%;            
+  top: 70%;
+  right: 20%;
   max-width: 500px;
   font-size: 1rem;
   line-height: 1.6;
@@ -308,10 +309,10 @@ hr {
 }
 
 @media (max-width: 426px) {
-    .hero-gradient::before,
-.hero-gradient::after {
-  inset: -10% -50%
-}
+  .hero-gradient::before,
+  .hero-gradient::after {
+    inset: -10% -50%;
+  }
 }
 
 @media (max-width: 426px) {
@@ -329,9 +330,8 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  background-color: #FFFFFF;
+  background-color: var(--secondary);
 }
-
 
 .main-wrapper {
   display: grid;
@@ -339,23 +339,21 @@ hr {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  
-  
+
   /* use a smaller, responsive min so columns don't force horizontal scroll on phones */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  
 }
 
 /* BOX DESIGN */
 .info-box {
-  background-color: #EEEEEE;
-  
+  background-color: var(--bg-color);
+
   border-radius: 20px;
   padding: 3rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   min-height: 400px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #C7B8A6;
+  border: 1px solid var(--accent);
 }
 
 .info-box:hover {
@@ -364,22 +362,20 @@ hr {
 }
 
 .info-box h2 {
-  color: #C7B8A6;
+  color: var(--accent);
   text-align: center;
   margin-bottom: 1rem;
-  
 }
 
 .info-box h3 {
   margin-top: 1.5rem;
-   background-color: #fff7e6;
+  background-color: #fff7e6;
 }
 
 .info-box ol,
 .info-box ul {
   padding-left: 1.2rem;
   line-height: 1.6;
-  
 }
 
 .info-box li {
@@ -390,20 +386,18 @@ hr {
 @media (max-width: 768px) {
   .info-box {
     padding: 2rem;
-    
   }
 }
 
 .info-box:last-child {
-  background-color: #fff7e6; 
-  border: 2px solid #C7B8A6;
-  min-height: 400px; 
-  padding: 2rem; 
+  background-color: #fff7e6;
+  border: 2px solid var(--accent);
+  min-height: 400px;
+  padding: 2rem;
   width: 100%;
   min-width: 0;
-  max-width: fit-content
+  max-width: fit-content;
 }
-
 
 @media (max-width: 768px) {
   .main-wrapper {
@@ -412,7 +406,6 @@ hr {
     padding: 0 1rem;
   }
 
-  
   .info-box:last-child {
     padding: 2rem;
     width: 100%;
@@ -432,11 +425,10 @@ hr {
   }
 }
 
-
 /* Mohammad - KOD SLUTAR HÄR! */
 
-  /* Axels kod börjar här */
-  /* FAQ */
+/* Axels kod börjar här */
+/* FAQ */
 
 .faq {
   width: 100%;
@@ -497,7 +489,6 @@ hr {
   margin: 1rem 0;
 }
 
-
 @media (min-width: 768px) {
   .faq {
     /* width: 60%; */
@@ -517,4 +508,4 @@ hr {
   }
 }
 
-  /* Axels kod slutar här */
+/* Axels kod slutar här */
