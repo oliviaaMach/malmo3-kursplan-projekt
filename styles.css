@@ -449,7 +449,6 @@ hr {
 .faq-question {
   width: 90%;
   margin: 0 auto;
-  text-align: left;
   background: var(--primary);
   border: none;
   padding: 1rem;
