@@ -554,6 +554,11 @@ footer {
 
 /* Dennis footer image Start */
 
+.dennis-bild{
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
 /* Dennis footer image end */
 
 /* Mohammed foooter image start*/
