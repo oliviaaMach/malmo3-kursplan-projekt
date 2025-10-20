@@ -55,6 +55,17 @@ hr {
   color: #000000;
 }
 
+#olivia {
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#olivia:hover {
+  transform: scale(1.1);
+}
+
 
 @media (min-width: 800px) {
 
