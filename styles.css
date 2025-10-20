@@ -292,6 +292,23 @@ hr {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+  .cta h1 {
+    transform: rotate(-5deg);
+  }
+
+  .summery {
+    position: static;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+
+  .hero-gradient {
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+}
+
 @media (max-width: 426px) {
   .hero-gradient::before,
   .hero-gradient::after {
@@ -516,3 +533,32 @@ footer {
 }
 
 /* Oligertas kod slutar här */
+
+
+/* Footer instructions:
+  bilder ska vara 50x50 pixels
+  border radious 50% så den blir rund
+*/
+
+
+/* Axel foooter image start*/
+
+/* Axel foooter image end*/
+
+
+/* Olivia foooter image start*/
+
+/* Olivia foooter image end*/
+
+
+/* Dennis footer image Start */
+
+/* Dennis footer image end */
+
+/* Mohammed foooter image start*/
+
+/* Mohammed foooter image end*/
+
+/* Oligerta foooter image start*/
+
+/* Oligerta foooter image end*/
