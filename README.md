@@ -59,7 +59,7 @@ Planning Stages
 ### Developer Notes
 Minimum supported screen 375px
 
-### Magnus request
+### Anders request
 Vi adderade smooth scroll, med en enkel rad css html { scroll-behavior: smooth;}. 100% täckning för moderna browsers. Den förbättrar användarupplevesen då det blir en mycket skönare transition till sektionen man navigerar till då den scrollar ner istället för att "hoppa" till sektionen direkt.
 
 
