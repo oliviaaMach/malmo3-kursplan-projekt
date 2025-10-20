@@ -597,7 +597,7 @@ footer {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 3rem;
+  bottom: 6rem;
   right: 3rem;
   background-color: var(--accent);
   color: var(--secondary);
