@@ -35,6 +35,8 @@ body {
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+  
 }
 
 .info-box h2 {
@@ -87,7 +89,14 @@ body {
   .info-box:nth-child(3) {
     grid-area: box3;
   }
+
+  .info-box:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+
 }
+
 
 
 /* Mohammad -KOD SLUTAR HÄR! */
