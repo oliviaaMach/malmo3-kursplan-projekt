@@ -105,6 +105,69 @@ main {
   opacity: 0;
 }
 
+
+
+/* OLIVIA START */
+
+.contact-edu {
+  background-color: var(--secondary);
+  display: grid;
+  width: 80%;
+  justify-items: center;
+  justify-self: center;
+  padding: 20px;
+}
+
+.contact-edu h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.contact-edu p, a {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+
+}
+
+.edu {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.edu img {
+  width: 80%;
+  max-width: fit-content;
+  margin: 0;
+  border-radius: 40px;
+}
+
+hr {
+  width: 60%;
+  color: #000000;
+}
+
+
+@media (min-width: 800px) {
+
+  .contact-edu {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-edu h2 {
+    grid-column: 1 /-1;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+/* OLIVIA END */
 .hamburger.open span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
