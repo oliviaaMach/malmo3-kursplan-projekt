@@ -32,7 +32,7 @@ Planning Stages
 
 ### Design Ideas:
 ##### Wireframe:
-(Figma bild kommer)
+<img src="assets/images/wireframe.png" width="200px" height="auto" alt="wireframe for fronend kursplan">
 
 ### Color Scheme
 
