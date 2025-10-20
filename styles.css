@@ -24,6 +24,7 @@ body {
 }
 
 /* Axels kod börjar här */
+
 /* NAVIGATION */
 .logo img {
   width: 32px;
@@ -291,23 +292,6 @@ hr {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1024px) {
-  .cta h1 {
-    transform: rotate(-5deg);
-  }
-
-  .summery {
-    position: static;
-    margin-top: 1.5rem;
-    text-align: left;
-  }
-
-  .hero-gradient {
-    justify-content: center;
-    padding: 3rem 1.5rem;
-  }
-}
-
 @media (max-width: 426px) {
   .hero-gradient::before,
   .hero-gradient::after {
@@ -443,7 +427,6 @@ hr {
 
 .faq h3 {
   text-decoration: underline;
-  font-size: 1.5rem;
 }
 
 .faq-question {
@@ -509,3 +492,27 @@ hr {
 }
 
 /* Axels kod slutar här */
+
+/* Oligertas kod börjar här */
+
+footer {
+  background-color: var(--primary);
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between; /* vänster till höger */
+  align-items: center; /* centrera vertikalt */
+  padding: 1rem 2rem;
+}
+
+/* Vänster: copyright */
+.footer-left {
+  text-align: left;
+}
+
+/* Höger: Chas Academy länk */
+.footer-right a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Oligertas kod slutar här */
