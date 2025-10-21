@@ -13,14 +13,21 @@ html {
 
 /* :ROOT */
 :root {
-  --bg-color: #eeeeee;
+  /* --bg-color: #eeeeee;
   --primary: #dddddd;
   --secondary: #ffffff;
-  --accent: #c7b8a6;
+  --accent: #c7b8a6; */
+
+  --bg-color: #000;
+  --primary: #dddddd;
+  --secondary: #fff;
+  --accent: #daa520;
+  --gradiant: radial-gradient(circle at center, #ffe082 0%, #ffca28 5%, #0a0a0a 80%);
 }
 
 body {
   background-color: var(--bg-color);
+  color: var(--accent);
 }
 
 /* Axels kod börjar här */
@@ -34,7 +41,8 @@ body {
 
 .navbar {
   position: fixed;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-color: rgb(73, 73, 73);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -51,7 +59,7 @@ body {
   left: 0;
   width: 100%;
   list-style: none;
-  background-color: var(--primary);
+  background-color: rgb(73, 73, 73);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
@@ -74,7 +82,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #000000;
+  color: var(--accent);
 }
 
 .hamburger {
@@ -122,7 +130,7 @@ body {
     display: flex;
     gap: 1.5rem;
     padding: 0;
-    margin: 0;
+    margin-right: 65px;
     background-color: transparent;
     height: auto;
     justify-content: center;
@@ -142,10 +150,18 @@ body {
 /* OLIVIA START */
 
 .contact-edu {
-  background-color: var(--secondary);
+  background-color: var(--bg-color);
   display: grid;
   justify-items: center;
   justify-self: center;
+  padding:2rem 1rem;
+  color: var(--secondary);
+  border-top: 1px solid var(--accent);
+}
+
+.contact-edu h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
 }
 
 .contact-edu h3 {
@@ -161,7 +177,7 @@ a {
 }
 
 .edu {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,21 +188,26 @@ a {
   max-width: fit-content;
   margin: 0;
   border-radius: 40px;
+  border-radius: 40px;
+  border: 3px solid var(--accent);
 }
 
 hr {
   width: 60%;
-  color: #000000;
+  border: none;
+  border-top: 2px solid var(--accent);
+  margin-top: 2rem;
 }
 
 @media (min-width: 800px) {
   .contact-edu {
-    width: 100%;
+    /* width: 100%; */
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .contact-edu h2 {
     grid-column: 1 /-1;
+    font-size: 2rem;
   }
 
   hr {
@@ -205,9 +226,10 @@ hr {
   position: relative;
   overflow: hidden;
   min-height: 60vh;
-  color: #fff;
 
-  background: #01023f;
+  /* background: #01023f; */
+  background: var(--gradiant);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 120% 120%;
@@ -269,10 +291,11 @@ hr {
   transform: rotate(-10deg);
   transform-origin: left bottom;
   line-height: 1;
-  text-shadow: 6px 8px 0 rgba(162, 245, 251, 0.189);
+  text-shadow: 6px 8px 0 rgba(0, 0, 0, 0.311);
   position: relative;
   z-index: 2;
   transition: all 0.3s ease;
+  color: var(--bg-color)
 }
 
 .summery {
@@ -283,9 +306,9 @@ hr {
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
-  color: #ccc;
+  color: #00000090;
   padding: 10px;
-  border: 3px dashed #fff;
+  border: 3px dashed var(--bg-color);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -331,7 +354,7 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  background-color: var(--secondary);
+  background-color: var(--bg-color);
 }
 
 .main-wrapper {
@@ -348,13 +371,13 @@ hr {
 /* BOX DESIGN */
 .info-box {
   background-color: var(--bg-color);
-
+  color: var(--primary);
   border-radius: 20px;
   padding: 3rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   min-height: 400px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 2px solid var(--accent);
+  border: 3px solid var(--accent);
 }
 
 .info-box:hover {
@@ -370,7 +393,6 @@ hr {
 
 .info-box h3 {
   margin-top: 1.5rem;
-  background-color: #fff7e6;
 }
 
 .info-box ol,
@@ -390,15 +412,15 @@ hr {
   }
 }
 
-.info-box:last-child {
-  background-color: #fff7e6;
+/* .info-box:last-child {
+  background-color: var(--bg-color);
   border: 2px solid var(--accent);
   min-height: 400px;
   padding: 2rem;
   width: 100%;
   min-width: 0;
   max-width: fit-content;
-}
+} */
 
 @media (max-width: 768px) {
   .main-wrapper {
@@ -409,7 +431,7 @@ hr {
 
   .info-box:last-child {
     padding: 2rem;
-    width: 100%;
+    /* width: 100%; */
     min-width: 0;
   }
 }
@@ -439,11 +461,15 @@ hr {
   margin: 0 auto;
   text-align: center;
   gap: 5px;
-  background-color: var(--secondary);
+  background-color: var(--bg-color);
 }
 
 .faq h3 {
   text-decoration: underline;
+  color: var(--secondary);
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--accent);
 }
 
 .faq-question {
@@ -478,6 +504,7 @@ hr {
   border-radius: 0 0 0.5rem 0.5rem;
   margin: 0 auto;
   box-sizing: border-box;
+  color: #000;
 }
 
 .faq-item:last-child {
@@ -491,7 +518,9 @@ hr {
 @media (min-width: 768px) {
   .faq {
     /* width: 60%; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-top: 3px solid var(--accent);
+    padding-top: 20px;
   }
 
   .faq-question {
@@ -513,7 +542,8 @@ hr {
 /* Oligertas kod börjar här */
 
 footer {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background: var(--gradiant);
   color: var(--accent);
   /* display: flex;
   justify-content: space-between;
