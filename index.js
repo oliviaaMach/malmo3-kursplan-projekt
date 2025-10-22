@@ -6,6 +6,8 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open"); // <-- aktiverar X-animationen
 });
 
+
+// FAQ section
 const questions = document.querySelectorAll('.faq-question');
 
 questions.forEach(q => {
