@@ -585,7 +585,7 @@ footer {
 }
 
 /* Vänster: copyright */
-.footer-left {
+.copyright {
   /* text-align: left;
   position: left; */
   justify-self: start;
@@ -756,9 +756,23 @@ footer {
 :root[data-theme="light"] {
   --bg-color: #ffffff;
   --primary: #1f2937;   /* text on light surfaces */
-  --secondary: #111;    /* stronger headings */
+  --secondary: #000;    /* stronger headings */
   --accent: #000;    /* keep your gold vibe */
+  --nav: #ddd;
   --gradiant: radial-gradient(circle at center, #5ad2ec 0%, #2020b6 5%, #000000 80%);
+}
+
+:root[data-theme="light"] #scrollTopBtn {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  border: 2px solid var(--primary);
+}
+
+:root[data-theme="light"] .footer-right a {
+  color: var(--bg-color);
+}
+:root[data-theme="light"] .copyright{
+  color: var(--bg-color);
 }
 
 html, body, .info-box, .navbar, .faq-question, .faq-answer, footer {
@@ -774,7 +788,9 @@ html, body, .info-box, .navbar, .faq-question, .faq-answer, footer {
   font-size: 1rem;
   cursor: pointer;
   margin-right: 30px;
+
 }
+
 .theme-toggle:focus { 
   outline: 2px solid var(--accent); 
   outline-offset: 2px; 
