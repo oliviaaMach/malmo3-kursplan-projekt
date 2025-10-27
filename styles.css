@@ -621,7 +621,7 @@ footer {
     order: 3;
     justify-self: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
   }
 }
 
