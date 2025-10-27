@@ -11,10 +11,10 @@ This project aims to transform the course plan into an engaging and visually int
 
 | MVP                                                                                                    | status |
 | ------------------------------------------------------------------------------------------------------ | ------ |
-| Header/Nav for mobile and desktop with quick-links to sections.                                        | 0%     |
-| Hero with background image, h1, textbox with information                                               | 0%     |
-| Main with 4 sections contianing Lärandemål, Kunskapskontroll, Principer för bedömning, Rätt till stöd. | 0%     |
-| Footer with " &copy; Knuts Änglar 2025 "                                                               | 0%     |
+| Header/Nav for mobile and desktop with quick-links to sections.                                        | 100%     |
+| Hero with background image, h1, textbox with information                                               | 100%     |
+| Main with 4 sections contianing Lärandemål, Kunskapskontroll, Principer för bedömning, Rätt till stöd. | 100%     |
+| Footer with " &copy; Knuts Änglar 2025 "                                                               | 100%     |
 
 | Animations                               | status |
 | ---------------------------------------- | ------ |
@@ -24,7 +24,7 @@ This project aims to transform the course plan into an engaging and visually int
 | ---------------- | ------ |
 | Dark-mode        | 0%     |
 | Colourblind-Mode | 0%     |
-| FAQ              | 0%     |
+| FAQ              | 100%     |
 | Testimonials     | 0%     |
 ### Status:
 
