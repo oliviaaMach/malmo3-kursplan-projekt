@@ -35,7 +35,7 @@ Planning Stages
 
 ### Color Scheme
 
-<img src="assets/images/swatch.png" height="300px" width="auto" alt="color swatch">
+<img src="assets/images/swatch2.png" height="300px" width="auto" alt="color swatch">
 
 ### Technologies
 <p>
