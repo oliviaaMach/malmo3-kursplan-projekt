@@ -758,7 +758,7 @@ footer {
   --secondary: #000;
   --accent: #000;
   --nav: #ddd;
-  --gradiant: radial-gradient(circle at center, #5ad2ec 0%, #2020b6 5%, #000000 80%);
+  --gradiant: radial-gradient(circle at center, #5a75ec 0%, #2020b6 5%, #000000 80%);
 }
 
 :root[data-theme="light"] #scrollTopBtn {
