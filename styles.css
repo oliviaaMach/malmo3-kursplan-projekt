@@ -755,15 +755,15 @@ footer {
 /* THEME: light mode overrides */
 :root[data-theme="light"] {
   --bg-color: #ffffff;
-  --primary: #1f2937;   /* text on light surfaces */
-  --secondary: #000;    /* stronger headings */
-  --accent: #000;    /* keep your gold vibe */
+  --primary: #1f2937;
+  --secondary: #000;
+  --accent: #000;
   --nav: #ddd;
   --gradiant: radial-gradient(circle at center, #5ad2ec 0%, #2020b6 5%, #000000 80%);
 }
 
 :root[data-theme="light"] #scrollTopBtn {
-  background-color: var(--accent);
+  background-color: #000000d6;
   color: var(--bg-color);
   border: 2px solid var(--primary);
 }
