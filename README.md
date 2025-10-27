@@ -18,7 +18,7 @@ This project aims to transform the course plan into an engaging and visually int
 
 | Animations                               | status |
 | ---------------------------------------- | ------ |
-| Make the page more interactive and alive | 0%     |
+| Make the page more interactive and alive | 100%     |
 
 | Add-ons          | status |
 | ---------------- | ------ |
