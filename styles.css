@@ -590,6 +590,12 @@ footer {
   justify-self: end;
 }
 
+/* Höger: Chas Academy länk */
+.footer-right a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .oss {
   display: flex;
   flex-direction: row;
@@ -604,6 +610,12 @@ footer {
     grid-template-columns: 1fr; 
     text-align: center;
     gap: 10px;
+    color: var(--bg-color);
+    font-weight: bold;
+  }
+
+  .footer-right a {
+    color: var(--bg-color);
   }
 
   .footer-left {
@@ -624,15 +636,6 @@ footer {
   }
 }
 
-
-
-
-
-/* Höger: Chas Academy länk */
-.footer-right a {
-  color: var(--accent);
-  text-decoration: none;
-}
 
 /* Oligertas kod slutar här */
 
