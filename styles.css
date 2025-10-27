@@ -23,6 +23,7 @@ html {
   --secondary: #fff;
   --accent: #daa520;
   --gradiant: radial-gradient(circle at center, #ffe082 0%, #ffca28 5%, #0a0a0a 80%);
+  --nav: rgb(73, 73, 73);
 }
 
 body {
@@ -41,13 +42,11 @@ body {
 
 .navbar {
   position: fixed;
-  /* background-color: var(--primary); */
-  background-color: rgb(73, 73, 73);
+  background-color: var(--nav);
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
   overflow: visible;
   z-index: 100;
   width: 100%;
@@ -87,7 +86,8 @@ body {
 
 .hamburger {
   width: 32px;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  margin-left: 25px;
   height: 22px;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,8 @@ body {
   display: block;
   height: 3px;
   width: 100%;
-  background-color: black;
+  /* background-color: var(--bg-color); */
+  background-color: currentColor;
   border-radius: 3px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -121,6 +122,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .logo img {
+    margin-right: 80px;
+  }
+  
   .hamburger {
     display: none;
   }
@@ -324,7 +329,7 @@ hr {
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
-  color: #00000090;
+  color: var(--bg-color);
   padding: 10px;
   border: 3px dashed var(--bg-color);
   border-radius: 20px;
@@ -493,7 +498,7 @@ hr {
   width: 90%;
   margin: 0 auto;
   background: var(--bg-color);
-  color: white;
+  color: var(--secondary);
 
   border: none;
   padding: 1rem;
@@ -525,7 +530,7 @@ hr {
   border-radius: 0 0 0.5rem 0.5rem;
   margin: 0 auto;
   box-sizing: border-box;
-  color: white;
+  color: var(--secondary);
   background-color: var(--bg-color);
   border-left: 3px solid var(--accent);
   border-right: 3px solid var(--accent);
@@ -745,3 +750,32 @@ footer {
 
 /* Scroll to Top Button SLUTAR HÄR! */
 
+/* Dennis Plays around here */
+
+/* THEME: light mode overrides */
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --primary: #1f2937;   /* text on light surfaces */
+  --secondary: #111;    /* stronger headings */
+  --accent: #000;    /* keep your gold vibe */
+  --gradiant: radial-gradient(circle at center, #5ad2ec 0%, #2020b6 5%, #000000 80%);
+}
+
+html, body, .info-box, .navbar, .faq-question, .faq-answer, footer {
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: .35rem .6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.theme-toggle:focus { 
+  outline: 2px solid var(--accent); 
+  outline-offset: 2px; 
+}
