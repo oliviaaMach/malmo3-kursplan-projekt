@@ -22,8 +22,7 @@ This project aims to transform the course plan into an engaging and visually int
 
 | Add-ons          | status |
 | ---------------- | ------ |
-| Dark-mode        | 0%     |
-| Colourblind-Mode | 0%     |
+| Dark-mode        | 2%     |
 | FAQ              | 100%     |
 | Testimonials     | 0%     |
 ### Status:
